@@ -1,0 +1,13 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block content %}
+    <h1>Ваш возраст: {{ player.age }}</h1>
+    {% next_button %}
+{% endblock %}
+
+
