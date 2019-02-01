@@ -1,8 +1,12 @@
-:Authors:
-    Philipp Chapkovski, HSE-Moscow, chapkovski@gmail.com
+.. class:: center
+
+This paragraph will be centered.
+
+.. image:: https://www.hse.ru/data/2012/01/19/1263884289/logo_%D1%81_hse_cmyk_e.png
+    :width: 100px
 
 
-:Version: 1.0 of 01/02/2019
+
 
 
 oTree Workshop
@@ -63,5 +67,11 @@ The ``bmi_interpers`` is just a name of this configuration from
 
 
 
+
+:Authors:
+    Philipp Chapkovski, HSE-Moscow, chapkovski@gmail.com
+
+
+:Version: 1.0 of 01/02/2019
 
 
