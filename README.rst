@@ -31,6 +31,7 @@ This app consists of two stages:
 1. A person inserts their height and weight
 
 2.1. In ``individual`` treatment a person can see their BMI index only
+
 2.2. In ``interpersonal`` treatment a person can see their partner's BMI index as well.
 
 Treatments can be changed using a parameter ``individual`` in
@@ -42,9 +43,10 @@ Donation
 This game consists of one stage only.
 
 A person has to donate a certain share of their endowment
-to a charity. A person's individual endowment can be fixed
+to a charity of their choice. A person's individual endowment can be fixed
 (in ``fixed`` treatment) or heterogeneous - randomly generated
-within certain limits (``hetero`` treatment).
+within certain limits (``hetero`` treatment). Charity list is presented
+in random order, and this order is stored in the database.
 
 
 
