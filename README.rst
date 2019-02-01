@@ -1,7 +1,3 @@
-.. class:: center
-
-This paragraph will be centered.
-
 .. image:: https://www.hse.ru/data/2012/01/19/1263884289/logo_%D1%81_hse_cmyk_e.png
     :width: 100px
 
