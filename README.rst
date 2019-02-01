@@ -1,4 +1,4 @@
-.. image:: https://www.hse.ru/data/2012/01/19/1263884289/logo_%D1%81_hse_cmyk_e.png
+.. image:: https://pbs.twimg.com/profile_images/609004842049245184/uoGVNMom_400x400.jpg
     :align: center
     :width: 100px
 
