@@ -13,12 +13,19 @@ SESSION_CONFIG_DEFAULTS = {
 
 SESSION_CONFIGS = [
     {
-        'name': 'myapp',
-        'display_name': "My First app",
-        'num_demo_participants': 2,
-        'app_sequence': ['firstapp', ],
-        'endowment': 100,
-        'gender': True,
+        'name': 'donation_fixed',
+        'display_name': "Donation - fixed endowment",
+        'num_demo_participants': 1,
+        'app_sequence': ['donation', ],
+        'hetero': False,
+
+    },
+    {
+        'name': 'donation_hetero',
+        'display_name': "Donation - heterogeneous endowment",
+        'num_demo_participants': 1,
+        'app_sequence': ['donation', ],
+        'hetero': True,
     },
     {
         'name': 'bmi_individ',
@@ -26,13 +33,15 @@ SESSION_CONFIGS = [
         'num_demo_participants': 2,
         'app_sequence': ['bmi', ],
         'individual': True,
+        'endowment': 90,
     },
-{
+    {
         'name': 'bmi_interpers',
         'display_name': "BMI Index - Interpersonal treatment",
         'num_demo_participants': 2,
         'app_sequence': ['bmi', ],
         'individual': False,
+        'endowment': 90,
     },
 ]
 

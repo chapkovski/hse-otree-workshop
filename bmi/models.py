@@ -53,9 +53,15 @@ class Player(BasePlayer):
         return round(self.weight / (self.height / 100) ** 2, 2)
 
     def get_bmi_info(self):
+        # we loop through all possible values in our bmi correspondence table from Constants
+        # and look for something that fits into this user's data.
+        # as soon as we find it, we exit with this data.
         for c in Constants.bmi_info:
             if c.check_if_in(self.get_bmi()):
                 return c
+        # if corresponding BMI is not found we don't want to generate an error, and we'll still
+        # return something
+        return BMI('Not defined', 0, 0, 'Not defined')
 
     def get_other(self):
         return self.get_others_in_group()[0]

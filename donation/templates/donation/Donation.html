@@ -2,10 +2,12 @@
 {% load otree static %}
 
 {% block title %}
-    Donation Decision  Your code {{ participant.code }}
+    Donation Decision
 {% endblock %}
-{% chat %}
+
 {% block content %}
+    <h4>How much you would like to donate to a charity?</h4>
+
     {% formfields %}
     {% next_button %}
 {% endblock %}
