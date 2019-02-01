@@ -2,8 +2,10 @@
 
   <embed>
   <p align="center">
-  <img width="300" height="300" src="https://pbs.twimg.com/profile_images/378800000259973236/91d6f5b97637415a61358354083b1635.png"></p>
+  <img width="100" height="100" src="https://pbs.twimg.com/profile_images/378800000259973236/91d6f5b97637415a61358354083b1635.png">
+  </p>
   </embed>
+
 
 
 
