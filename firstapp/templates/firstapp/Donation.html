@@ -2,12 +2,12 @@
 {% load otree static %}
 
 {% block title %}
-    Instructions.
+    Donation Decision  Your code {{ participant.code }}
 {% endblock %}
-
+{% chat %}
 {% block content %}
-    You are matched with {{ Constants.num_others }} players.
     {% formfields %}
     {% next_button %}
-
 {% endblock %}
+
+

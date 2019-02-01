@@ -15,10 +15,24 @@ SESSION_CONFIGS = [
     {
         'name': 'myapp',
         'display_name': "My First app",
-        'num_demo_participants': 1,
+        'num_demo_participants': 2,
         'app_sequence': ['firstapp', ],
         'endowment': 100,
         'gender': True,
+    },
+    {
+        'name': 'bmi_individ',
+        'display_name': "BMI Index - Individual treatment",
+        'num_demo_participants': 2,
+        'app_sequence': ['bmi', ],
+        'individual': True,
+    },
+{
+        'name': 'bmi_interpers',
+        'display_name': "BMI Index - Interpersonal treatment",
+        'num_demo_participants': 2,
+        'app_sequence': ['bmi', ],
+        'individual': False,
     },
 ]
 
@@ -30,7 +44,10 @@ LANGUAGE_CODE = 'en'
 REAL_WORLD_CURRENCY_CODE = 'USD'
 USE_POINTS = True
 
-ROOMS = []
+ROOMS = [
+    {'name': 'hse',
+     'display_name': 'HSE WORKSHOP'}
+]
 
 ADMIN_USERNAME = 'admin'
 # for security, best to set admin password in an environment variable
