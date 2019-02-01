@@ -35,14 +35,18 @@ class Subsession(BaseSubsession):
         # because otherwise we will modify original list.
         # to know more about it, read this: https://stackoverflow.com/questions/2612802/how-to-clone-or-copy-a-list
         charities = Constants.CHARITY_CHOICES.copy()
+        # we read configuration from settings. If 'hetero' parameter is missing, then by default we play 'fixed'
+        # treatment
         hetero = self.session.config.get('hetero', False)
 
         for p in self.get_players():
+            # if we are in hetero treatment we draw a random number for endomwnet using boundaries from Constants.
+            # otherwise it is fixed - based on settings or Constants if the former is not set
             if hetero:
                 p.endowment = random.randint(Constants.lb, Constants.ub)
             else:
                 p.endowment = self.session.config.get('endowment', Constants.endowment)
-
+            # we generate a random order of charities and save it for further use and analysis
             random.shuffle(charities)
             p.choice_order = json.dumps(charities)
 

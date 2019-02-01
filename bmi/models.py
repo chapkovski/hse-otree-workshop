@@ -11,7 +11,17 @@ original bmi index chart is taken from here:
 https://bmicalculator.mes.fm/bmi-chart
 """
 
+"""
+Below we create a new class to find easily how current BMI corresponds to categories.
+In Constants below we create a variable called bmi_info with a set of BMI objects:
+each object has a name (underweight, normal, overweight etc.), lower and upper boundary (left, right)
+and alert property - to show a bootstrap alert of corresponding color.
+It also has an additional method called check_if_in - when you pass a value there it returns itself, if the value
+is between lower and upper value, or None if it isn't. 
+That is not the most efficient way of dealing with such kind of tasks but again for didactic reasons can be helpful 
+to understand how and why classes are used.
 
+"""
 class BMI:
     def __init__(self, name, left, right, alert):
         self.name = name
@@ -34,7 +44,7 @@ class Constants(BaseConstants):
         BMI('Overweight', 25, 30, 'alert-warning'),
         BMI('Obese', 30, 40, 'alert-danger'),
         BMI('Extremely Obese', 40, 1000, 'alert-danger')
-    ]
+    ]  # see the comment above
 
 
 class Subsession(BaseSubsession):
@@ -64,4 +74,6 @@ class Player(BasePlayer):
         return BMI('Not defined', 0, 0, 'Not defined')
 
     def get_other(self):
+        # by default get_others_in_group return all players, and since we need a single one, we return this list's
+        # first element.
         return self.get_others_in_group()[0]
