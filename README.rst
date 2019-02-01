@@ -1,7 +1,6 @@
-.. image:: https://pbs.twimg.com/profile_images/609004842049245184/uoGVNMom_400x400.jpg
-    :align: center
-    :width: 100px
-
+<p align="center">
+  <img width="460" height="300" src="https://pbs.twimg.com/profile_images/378800000259973236/91d6f5b97637415a61358354083b1635.png">
+</p>
 
 
 
